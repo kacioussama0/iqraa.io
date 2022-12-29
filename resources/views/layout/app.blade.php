@@ -34,6 +34,14 @@
 
 <header class="position-relative landing-page @if(request()->is('/')) vh-100    @endif">
 
+
+
+
+
+
+
+
+
     <nav class="navbar navbar-expand-lg navbar-dark  @if(!request()->is('/')) bg-primary bg-opacity-100 @endif" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -42,6 +50,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="offcanvasBottom" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-light fa-bars" style="font-size: 22px"></i>
             </button>
+
 
 
 
@@ -69,17 +78,57 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{url('category-news')}}">أخبار المدرسة</a>
+                        <a class="nav-link active" href="{{url('school-news')}}">أخبار المدرسة</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="{{url('contact-us')}}">تواصلو معنا</a>
+                    </li>
+
+                    <li class="nav-item p-0">
+                        <button class="border-0 p-2 bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-regular fa-user"></i>
+                        </button>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <div class="collapse text-bg-light   navbar-expand-lg z-3 position-relative" style="z-index: 99999" id="navbarToggleExternalContent">
+        <div class="p-2">
+            <div class="container">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">الأعضاء<i class="fa fa-light fa-users fa-1x ms-2"></i></a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('categories.index')}}">التصنيفات<i class="fa fa-light fa-tag fa-1x ms-2"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{{route('posts.index')}}">المقالات<i class="fa fa-light fa-paperclip fa-1x ms-2"></i></a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">خروج<i class="fa-light fa-arrow-right-from-bracket fa-1x ms-2"></i></i></a>
                     </li>
 
                 </ul>
 
             </div>
         </div>
-    </nav>
+    </div>
 
     @if(!request()->is('/'))
 
@@ -125,12 +174,19 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{url('category-news')}}">أخبار المدرسة</a>
+                    <a class="nav-link active" href="{{url('school-news')}}">أخبار المدرسة</a>
                 </li>
 
             </ul>
+
+
+
+
         </div>
+
+
         <div class="shapedividers_com-8481 py-3 " style="height: 100px"></div>
+
     </div>
 
 
