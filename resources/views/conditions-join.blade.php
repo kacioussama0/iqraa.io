@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title','شروط الإلتحاق بالمدرسة')
+@section('title',__('condition.condi-title'))
 
 @section('content')
 
@@ -12,12 +12,13 @@
             <div class="row my-5  align-items-center">
 
                 <div class="col-md-5">
-                    <p class="text-muted lh-lg">يفتح الملف للأطفال من سن ثلاث سنوات ونصف للصف الأول من رياض الأطفال ويحدد التنسيق المقبولين من المتقدمين</p>
 
-                        <div class="alert alert-primary p-0 border-start border-0 border-primary-subtle rounded border-5 py-1 ">
+
+                        <div class="alert alert-secondary p-0 border-start border-0 border-secondary rounded border-5 py-1 ">
                             <div class="p-3">
-                                <h3>ملاحظة</h3>
-                                <p>يشترط حضور الطفل مع الأب والأم فى المقابلة الشخصية قبل فتح الملف</p>
+                                <h3>{{__('condition.condition-notice')}}</h3>
+                                <p>{{__('condition.condition-content')}}</p>
+                                <p>{{__('condition.condition-notice-con')}}</p>
                             </div>
                         </div>
 
@@ -33,7 +34,7 @@
                     <div class="card rounded-5 text-center border-0 shadow-sm">
                         <div class="card-body">
                             <i class="fa-thin fa-file fa-6x"></i>
-                            <h4 class="mt-5 text-muted">شهادة ميلاد</h4>
+                            <h4 class="mt-5 text-muted" >{{__('condition.condi-require-1')}}</h4>
                         </div>
                     </div>
                 </div>
@@ -42,7 +43,7 @@
                     <div class="card rounded-5 text-center border-0 shadow-sm">
                         <div class="card-body">
                             <i class="fa-thin fa-user fa-6x"></i>
-                            <h4 class="mt-5 text-muted">8 صور شخصية</h4>
+                            <h4 class="mt-5 text-muted">{{__('condition.condi-require-2')}}</h4>
                         </div>
                     </div>
                 </div>
@@ -51,7 +52,7 @@
                     <div class="card rounded-5 text-center border-0 shadow-sm">
                         <div class="card-body">
                             <i class="fa-thin fa-id-card-alt fa-6x"></i>
-                            <h4 class="mt-5 text-muted">صورة بطاقة الأب والأم</h4>
+                            <h4 class="mt-5 text-muted">{{__('condition.condi-require-3')}}</h4>
                         </div>
                     </div>
                 </div>
@@ -68,25 +69,25 @@
 
         <div class="container">
 
-            <h2 class="text-center">طلب المعلومات</h2>
+            <h2 class="text-center special-radius z-3 position-relative display-6 fw-bold mx-auto mb-5 pb-5" style="width: fit-content">{{__('condition.condi-title-1')}}</h2>
 
             <div class="row my-5 align-items-center">
 
                 <div class="col-md-6">
 
                     <ol class="vstack gap-3">
-                        <li class="lh-lg">تنسيق السن للصف الأول رياض أطفال والصف الأول الابتدائي ،يتم الإختيار تدريجيًا من الأكبر للأصغر سنا لحين إستكمال الكثافة المقررة</li>
-                        <li class="lh-lg">يشترط للتقديم بقسم لغات أن يكون مؤهل الأب والأم مؤهل عالي ، أما قسم العربي لابد أن يكون مؤهل أحد الوالدين مؤهل عالي.</li>
-                        <li class="lh-lg">في حالة قبول الطالب يتم فتح الملف ودفع المصروفات خلال خمس أيام من تاريخ علمه بالقبول وفي حاله التأخير يتم حذف اسم الطالب تلقائيًا و إدخال اسم الطالب الذى يليه فى الترتيب.</li>
-                        <li class="lh-lg">تطبيقًا وتنفيذً للقرارات الوزارية ولائحة الإنضباط المدرسي ومن أحد بنودها الإلتزام بالزي المدرسي ولاتسمح إدارة المدرسة للطالب بالدخول بأي زي مخالف.</li>
-                        <li class="lh-lg">في حالة التقدم بأي شكوى أو استفسار ، يتم التسجيل بالريسبشن حيث يقوم ولي الأمر بنفسهِ بتسجيل اسم الطالب ،الصف ،القسم ، رقم التليفون للتواصل والرد على  الشكوى أو الاستفسار.</li>
+                        <li class="lh-lg">{{__('condition.condi-content-1')}}</li>
+                        <li class="lh-lg">{{__('condition.condi-content-2')}}</li>
+                        <li class="lh-lg">{{__('condition.condi-content-3')}}</li>
+                        <li class="lh-lg">{{__('condition.condi-content-4')}}</li>
+                        <li class="lh-lg">{{__('condition.condi-content-5')}}</li>
                     </ol>
 
 
-                    <div class="alert alert-primary p-0 border-start border-0 border-primary-subtle rounded border-5 py-1 ">
+                    <div class="alert alert-secondary p-0 border-start border-0 border-secondary rounded border-5 py-1 ">
                         <div class="p-3">
-                            <h3>ملاحظة</h3>
-                            <p>لاينظر لأي مشكلة تكتب على جروبات الواتس آب أو الفيس بوك.</p>
+                            <h3>{{__('condition.condition-notice-2')}}</h3>
+                            <p>{{__('condition.condition-notice-con-2')}}</p>
                         </div>
                     </div>
 
@@ -105,8 +106,8 @@
                     <div class="col-lg-6 order-last order-lg-last">
                         <div class="card py-5 border-0 text-center text-lg-start">
                             <div class="card-body vstack gap-3 ">
-                                <h4>االأتوبيس المدرسي </h4>
-                                <p class="text-muted">في حالة الإشتراك في الأتوبيس المدرسي ، ولي الأمر ملزم إلزامًا تامًا بدفع القيمة المالية المحددة للأتوبيس المدرسي كاملة قبل بدء العام الدراسي، وتعتبر الأماكن محجوزة للعام الدراسي بأكمله.ولايحق لولي الأمر المطالبة بإسترداد مصروفات الأتوبيس تحت أي ظرف حتى لو لم يستخدم نجله الاتوبيس.</p>
+                                <h4>{{__('condition.condi-title-3')}}</h4>
+                                <p class="text-muted lh-lg">{{__('condition.condi-content-6')}}</p>
                             </div>
                         </div>
                     </div>

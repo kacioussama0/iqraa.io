@@ -410,7 +410,7 @@
 
 </style>
 
-<div class="loading-page bg-primary fixed-top  vh-100 d-flex align-items-center justify-content-center flex-column">
+<div class="loading-page bg-dark fixed-top  vh-100 d-flex align-items-center justify-content-center flex-column">
 
 
     <img src="{{asset('imgs/logo.svg')}}" alt="" style="width: 100px" class="img-fluid my-5 py-5">

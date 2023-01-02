@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title','تواصلو معنا')
+@section('title',__('contact.contact-us'))
 
 
 @section('style')
@@ -14,14 +14,14 @@
 
 
 
-            <div class="row my-5 g-5">
+            <div class="row my-5 g-3">
 
 
                 <div class="col-md-4">
                     <div class="card rounded-5 border-0 shadow-sm">
                         <div class="card-body p-5 text-center vstack gap-4 align-items-center">
                             <i class="fa fa-light fa-location-dot fa-5x"></i>
-                            <p class="text-muted">34 chemin Colladon 1209 Genève Suisse Bus 3, arrêt Colladon</p>
+                            <p class="text-muted"><a href="https://goo.gl/maps/LjxSHwTorzeNG9n87" class="text-decoration-none text-dark" target="_blank">34 chemin Colladon 1209 Genève Suisse Bus 3, arrêt Colladon</a> </p>
                         </div>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                     <div class="card rounded-5 border-0 shadow-sm">
                         <div class="card-body p-5 text-center vstack gap-4 align-items-center">
                             <i class="fa fa-light fa-envelope fa-5x"></i>
-                            <p class="fs-3 text-muted">Madrassa@fcigeneve.ch</p>
+                            <p class="fs-3 text-muted "><a href="mailto:Madrassa@fcigeneve.ch " class="text-decoration-none text-dark">Madrassa@fcigeneve.ch</a> </p>
                         </div>
                     </div>
                 </div>

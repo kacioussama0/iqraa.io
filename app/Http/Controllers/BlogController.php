@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Category;
-use Illuminate\Http\Request;
+use Carbon\Carbon;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\Session;
 class BlogController extends Controller
 {
     public function categories() {
@@ -53,6 +56,21 @@ class BlogController extends Controller
 
 
 
+    }
+
+
+    public function change_language($locale) {
+        try {
+            if(array_key_exists($locale,config('locale.languages'))) {
+                App::setLocale($locale);
+                Lang::setLocale($locale);
+                Session::put('locale',$locale);
+                Carbon::setLocale($locale);
+            }
+            return redirect()->to('/');
+        }catch (\Exception $exception) {
+            return redirect()->back();
+        }
     }
 
 }
