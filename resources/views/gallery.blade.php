@@ -13,13 +13,14 @@
         <div class="container ">
                 <div class="d-flex justify-content-end mx-auto mb-4">
 
-                     <i class="btn btn-dark ms-2 rounded-circle fa-thin fa-video fa-4x align-self-end p-3"></i>
-                     <i class="btn btn-dark ms-2 rounded-circle fa-thin fa-image fa-4x align-self-end p-3 "></i>
-                </div>
+                    <a href="{{url('video')}}"> <i class="btn btn-dark ms-2 rounded-circle fa-thin fa-video fa-4x align-self-end p-3"></i>
+                    </a>
+                    <a href="{{url('gallery')}}"> <i class="btn btn-dark ms-2 rounded-circle fa-thin fa-image fa-4x align-self-end p-3 "></i>
+                    </a>                </div>
             <div class="row g-4">
 
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <img src="{{asset('imgs/7.jpg')}}" alt="" class="img-fluid rounded-5">
+                    <img src="{{url('imgs/7.jpg')}}" alt="" class="img-fluid rounded-5">
                 </div>
 
                 <div class="col-sm-6 col-md-4 col-lg-3">

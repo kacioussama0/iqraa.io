@@ -8,6 +8,7 @@ Route::view('conditions-joins','conditions-join');
 Route::view('contact-us','contact');
 Route::view('travel-info','travel-info');
 Route::view('gallery','gallery');
+Route::view('video','video');
 Route::view('faq','faq');
 Route::view('structure','structure');
 Route::get('/change-language/{locale}',[\App\Http\Controllers\BlogController::class,'change_language'])->name('change-lang');
