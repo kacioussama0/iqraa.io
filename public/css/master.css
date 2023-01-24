@@ -16,7 +16,7 @@
     display: block;
     background: var(--color-default);
     position: absolute;
-    right: -15%;
+    right: -4%;
     top: 40%;
     transform: translateY(-50%);
     z-index: -1;

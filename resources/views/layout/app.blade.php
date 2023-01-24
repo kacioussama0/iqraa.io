@@ -18,14 +18,36 @@
     @else
         <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     @endif
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
 
 
     <link rel="stylesheet" href="{{asset('css/master.css')}}">
 
     @yield('style')
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="{{asset('js/owl.carousel.js')}}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.querySelector('.owl-carousel').owlCarousel({
+
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+
+    </script>
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
@@ -39,6 +61,8 @@
             $('.loading-page').fadeOut();
             $('body').removeClass('overflow-hidden');
             $('.loading-page').addClass('d-none');
+
+
 
         });
     </script>
@@ -211,7 +235,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">{{__('app.gallery')}}</a>
+                    <a class="nav-link active" href="{{url('gallery')}}">{{__('app.gallery')}}</a>
                 </li>
 
                 <li class="nav-item">

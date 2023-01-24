@@ -19,7 +19,7 @@
             @foreach($categories as $category)
 
                 <div class="col-md-4">
-                    <div class="card border-0 shadow-sm rounded-5 overflow-hidden ">
+                    <div class="card border-0 shadow-sm rounded-2 overflow-hidden ">
 
 
 
@@ -33,7 +33,7 @@
                             <a href="{{url('school-news/' . $category -> slug)}}" class="link-primary text-decoration-none stretched-link">{{$category->name}}</a>
                         </h3>
 
-                        <div class="badge bg-primary py-3">
+                        <div class="badge bg-primary rounded-top-0 py-2">
                             <h5 class="mb-0">المقالات : {{count($category->posts)}}</h5>
                         </div>
 

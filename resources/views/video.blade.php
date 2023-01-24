@@ -5,31 +5,62 @@
 @section('content')
 
 
-    <!--Start Photos -->
+    <!--Start Videos -->
 
-    <section class="photos py-5 my-5">
+    <section class="photos py-5 my-5 container">
 
 
-        <div class="container ">
+        <div >
             <div class="d-flex justify-content-end mx-auto mb-4">
 
                 <a href="{{url('video')}}"> <i class="btn btn-dark ms-2 rounded-circle fa-thin fa-video fa-4x align-self-end p-3"></i>
                 </a>
+
                 <a href="{{url('gallery')}}"> <i class="btn btn-dark ms-2 rounded-circle fa-thin fa-image fa-4x align-self-end p-3 "></i>
                 </a>
+
             </div>
 
+            <div class=" row gap-2 ">
 
-            <div class="row g-4">
+                <div class=" col-md-6 col-lg-3 border rounded p-0">
+                    <video class="img-fluid" autoplay loop muted>
+                        <source
+                            src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
 
 
-                    <video src="https://youtu.be/OFaRbb5wu1k" type="mp4" class="col-sm-6 col-md-4 col-lg-3 object-fit-xxl-contain border rounded" autoplay></video>
+                <div class="col-md-6 col-lg-3 border rounded p-0" >
+                    <video class="img-fluid"  autoplay loop muted>
+                        <source
+                            src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
 
-                    <video src="https://www.youtube.com/watch?v=X9V1S8wtrNk" class="col-sm-6 col-md-4 col-lg-3 object-fit-xxl-contain border rounded" autoplay></video>
 
-                    <video src="https://youtu.be/OFaRbb5wu1k" class="col-sm-6 col-md-4 col-lg-3 object-fit-xxl-contain border rounded" autoplay></video>
+                <div class="col-md-6 col-lg-3 border rounded p-0">
+                    <video class="img-fluid"  autoplay loop muted>
+                        <source
+                            src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
 
-                    <video src="https://youtu.be/OFaRbb5wu1k" class="col-sm-6 col-md-4 col-lg-3 object-fit-xxl-contain border rounded" autoplay></video>
+
+                <div class="col-md-6 col-lg-3 border rounded p-0">
+                    <video class="img-fluid"  autoplay loop muted>
+                        <source
+                            src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
 
 
 
@@ -40,11 +71,20 @@
 
 
 
+        <div class="body-card border rounded ">
+            <div>
+                <img src="{{asset('imgs/1.jpg')}}" alt="">
+            </div>
+        </div>
+
+
+
+
     </section>
 
 
 
-    <!--End Photos -->
+    <!--End videos -->
 
 
 
